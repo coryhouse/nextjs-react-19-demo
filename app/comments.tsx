@@ -1,4 +1,3 @@
-"use client";
 import { use } from "react";
 import { Comment } from "./types";
 
@@ -7,7 +6,7 @@ interface CommentsProps {
 }
 
 export function Comments({ commentsPromise }: Readonly<CommentsProps>) {
-  // Suspends until the promise resolves
+  // Suspense fallback renders until this promise resolves
   const commentsResponse = use(commentsPromise);
   const comments = use(commentsResponse.json()) as Comment[];
 
