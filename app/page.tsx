@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { Comments } from "./comments";
 import { Post } from "./types";
+import { CustomButtonWrapper } from "./components/CustomButton";
 
 const postId = 1;
 
@@ -21,6 +22,9 @@ export default async function Home() {
       <Suspense fallback={<div>Loading comments...</div>}>
         <Comments commentsPromise={commentsPromise} />
       </Suspense>
+      <div className="mt-4">
+        <CustomButtonWrapper>Click me!</CustomButtonWrapper>
+      </div>
     </>
   );
 }
