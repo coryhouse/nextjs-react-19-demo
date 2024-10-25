@@ -2,14 +2,14 @@
   "posts": [
     {
       "id": 1,
-      "title": "RSC Performance Experiment",
+      "title": "React 19: The New Stuff",
       "author": "Cory House"
     }
   ],
   "comments": [
     {
       "id": 1,
-      "body": "some comment",
+      "body": "Seems nice!",
       "postId": 1
     }
   ],
