@@ -27,7 +27,7 @@ export function UserContextProvider({
       }}
     >
       <Nav />
-      {children}
+      <main className="p-4">{children}</main>
     </UserContext.Provider>
   );
 }
