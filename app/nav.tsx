@@ -5,17 +5,16 @@ import { UserContext } from "./user-context";
 export function Nav() {
   const userContext = use(UserContext);
   return (
-    <nav>
-      <ul>
-        <li>
+    <nav className="bg-slate-500 p-4 text-white flex justify-between">
+      <ul className="flex">
+        <li className="mr-4">
           <Link href="/">Home</Link>
         </li>
-        <li>
+        <li className="mr-4 flex-row-reverse">
           <Link href="/about">About</Link>
         </li>
       </ul>
-
-      {userContext?.user && <p>Hello {userContext.user.name}</p>}
+      {userContext?.user && <div>Hello {userContext.user.name}</div>}
     </nav>
   );
 }
