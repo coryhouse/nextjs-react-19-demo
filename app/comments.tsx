@@ -12,12 +12,14 @@ export function Comments({ commentsPromise }: Readonly<CommentsProps>) {
 
   return (
     <>
-      <h2>Comments</h2>
-      <ul>
-        {comments.map(({ id, body }) => (
-          <li key={id}>{body}</li>
-        ))}
-      </ul>
+      <h2 className="text-lg">Comments</h2>
+      <section className="border mt-4 p-4">
+        <ul>
+          {comments.map(({ id, body }) => (
+            <li key={id}>{body}</li>
+          ))}
+        </ul>
+      </section>
     </>
   );
 }
