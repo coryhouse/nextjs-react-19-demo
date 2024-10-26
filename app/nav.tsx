@@ -11,7 +11,7 @@ export function Nav() {
           <Link href="/">Home</Link>
         </li>
         <li className="mr-4 flex-row-reverse">
-          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
       {userContext?.user && <div>Hello {userContext.user.name}</div>}
