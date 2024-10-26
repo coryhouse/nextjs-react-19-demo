@@ -40,7 +40,7 @@ export default function ContactPage() {
       <form action={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="subject" className="block mb-2">
-            Subject:
+            Subject
           </label>
           <select
             id="subject"
@@ -55,7 +55,7 @@ export default function ContactPage() {
         </div>
         <div>
           <label htmlFor="message" className="block mb-2">
-            Message:
+            Message
           </label>
           <textarea
             id="message"
