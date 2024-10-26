@@ -14,8 +14,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - [x] React Server Components - Components that render at build time, or for each request.
 - [ ] Actions - Functions that use async transitions and automatically submit data for you. Actions support error handling, optimistic updates, and pending state.
-- [ ] Full custom element support
-- [ ] Document metadata support - Render title, link, and meta tags and they automatically hoist.
+- [x] Full custom element support
+- [x] Document metadata support - Render title, link, and meta tags and they automatically hoist. (See Vite, since Next has its own metadata API)
 - [ ] Stylesheet precedence settings
 - [ ] Render async scripts in any component - They're automatically deduplicated
 - [ ] Preload resources via prefetchDNS, preconnect, preload, preinit
