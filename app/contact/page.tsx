@@ -3,8 +3,6 @@
 import { useState } from "react";
 import { useFormStatus } from "react-dom";
 import { useOptimistic } from "react";
-
-// Server action (to be implemented)
 import { submitContact } from "./actions";
 
 export default function ContactPage() {
