@@ -1,7 +1,7 @@
 "use client";
 
-import Nav from "@/components/Nav";
 import { createContext, useState } from "react";
+import { Nav } from "./nav";
 
 type UserContextValue = {
   user: null | { name: string };
